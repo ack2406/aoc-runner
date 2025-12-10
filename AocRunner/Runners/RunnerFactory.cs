@@ -7,6 +7,8 @@ public static class RunnerFactory
         return language.ToLower() switch
         {
             "python" => new PythonRunner(),
+            "go" => new GoRunner(),
+            "scala" => new ScalaRunner(),
             _ => throw new NotSupportedException($"Language {language} not supported")
         };
     }

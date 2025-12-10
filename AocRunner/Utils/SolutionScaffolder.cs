@@ -66,6 +66,8 @@ public class SolutionScaffolder
     private static string GetEntryPoint(string language) => language switch
     {
         "python" => "solution.py",
+        "go" => "solution.go",
+        "scala" => "solution.scala",
         _ => throw new NotSupportedException($"Language {language} not supported yet.")
     };
 }
